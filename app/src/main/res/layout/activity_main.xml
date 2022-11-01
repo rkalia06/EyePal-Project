@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewTitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:textSize="35sp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:text="Glaucoma Detection"-->
+<!--        android:textColor="#000"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:textAlignment="center"-->
+<!--        />-->
+    <Button
+        android:id="@+id/textViewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        android:text="TO NEW SCREEN"
+        android:textColor = "#000"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:onClick="newAppBtn"
+
+    />
+
+    <com.ortiz.touchview.TouchImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="355dp"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="75dp"
+    />
+<!--    <ImageView-->
+<!--        android:id="@+id/imgView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="375dp"-->
+<!--        tools:srcCompat="@tools:sample/avatars"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="75dp"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/selectImageBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/strikeNight"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="210dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="325dp"-->
+<!--        android:text="Select Image"-->
+<!--        android:onClick="selectImageBtn"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/cameraBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/strikeNight"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="210dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="325dp"-->
+<!--        android:text="Use Camera"-->
+<!--        android:onClick="cameraBtn"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/makePredictionBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/metal"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="375dp"-->
+<!--        android:text="Make Prediction"-->
+<!--        android:onClick="makePredictionBtn"-->
+
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/storageBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/teal_700"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="425dp"-->
+<!--        android:text="Go to Storage"-->
+<!--        android:onClick="storageBtn"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/saveBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/teal_200"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="575dp"-->
+<!--        android:text="Save Image"-->
+<!--        android:onClick="saveBtn"-->
+<!--        />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="255dp"-->
+<!--        android:layout_marginTop="475dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:minHeight="50dp"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:textSize="20dp"-->
+<!--        />-->
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Picture Name"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="625dp"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextB"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:text="Picture Name"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="525dp"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/refreshBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/teal_200"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginRight="210dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="525dp"-->
+<!--        android:text="Refresh"-->
+<!--        android:onClick="refreshBtn"-->
+<!--        />-->
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginRight="20dp"
+        android:text="Select an Image or Use Camera!"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textViewM"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:textColor="@color/strikerBlue"
+        android:textSize="28sp"
+        android:textStyle="italic" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="@color/strikerBlue"
+        android:clickable="true"
+        android:onClick="cameraBtn"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:tint="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="77.5dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="@color/strikerBlue"
+        android:clickable="true"
+        android:onClick="selectImageBtn"
+        app:tint="@android:color/white"
+        app:srcCompat="@android:drawable/sym_contact_card" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/strikerBlue"
+        android:clickable="true"
+        android:onClick="setZoomedBitmap"
+        app:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingPredict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="700dp"
+        app:srcCompat="@android:drawable/ic_menu_set_as"
+        android:onClick="objDetInference"
+        app:tint="@android:color/white"
+        android:backgroundTint="@color/strikerBlue"
+        />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/classPredict"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="true"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:layout_marginRight="77.5dp"-->
+<!--        android:layout_marginTop="700dp"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_set_as"-->
+<!--        android:onClick="makePredictionBtn"-->
+<!--        app:tint="@android:color/white"-->
+<!--        android:backgroundTint="@color/strikerBlue"-->
+<!--        />-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="77.5dp"
+        android:layout_marginTop="700dp"
+        app:tint="@android:color/white"
+        android:backgroundTint="@color/strikerBlue"
+        android:clickable="true"
+        android:onClick="activitySave"
+        app:srcCompat="@android:drawable/ic_menu_upload"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingStorage"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="700dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:onClick="storageBtn"
+        android:backgroundTint="@color/strikerBlue"
+        app:tint="@android:color/white"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingDownload"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/strikerBlue"
+        android:clickable="true"
+        android:onClick="activityDownload"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        app:tint="@android:color/white" />
+<!--    stat_sys_download-->
+
+</merge>

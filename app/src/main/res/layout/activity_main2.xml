@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/storageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:text="Storage"
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/returnBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/metal"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginRight="210dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="75dp"-->
+<!--        android:text="Return"-->
+<!--        android:onClick="returnWO"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/returnWithoutBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:backgroundTint="@color/teal_700"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginLeft="210dp"-->
+<!--        android:radius="20dp"-->
+<!--        android:layout_marginTop="75dp"-->
+<!--        android:text="GET IMAGES"-->
+<!--        android:onClick="GO"-->
+<!--        />-->
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="140dp"
+        android:radius="20dp"
+        android:minHeight="50dp"
+        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_columnSpan="@integer/material_motion_duration_short_2"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgViewOne"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="210dp"
+        android:layout_marginTop="200dp"
+        android:onClick="viewOneClicked"
+    />
+
+    <ImageView
+        android:id="@+id/imgViewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="200dp"
+        />
+    <ImageView
+        android:id="@+id/imgViewThree"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="210dp"
+        android:layout_marginTop="475dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgViewFour"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="475dp"
+        />
+
+    <TextView
+        android:id="@+id/viewOneCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="210dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="400dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text=""
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/viewTwoCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="400dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text=""
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/viewThreeCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="210dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="675dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text=""
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/viewFourCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="675dp"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text=""
+        android:textColor="#000"
+        android:textAlignment="center"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="700dp"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:onClick="returnWO"
+        android:backgroundTint="@color/strikerBlue"
+        app:tint="@android:color/white"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingFirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="77.5dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="@color/strikerBlue"
+        app:tint="@android:color/white"
+        android:clickable="true"
+        android:onClick="GO"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+</merge>

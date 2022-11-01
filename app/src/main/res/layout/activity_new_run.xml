@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewRunActivity">
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/imgViewTouch"
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="56dp"
+        />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginRight="40dp"
+        android:text="Swipe to Zoom"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/instructionsPtTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="605dp"
+        android:layout_marginRight="40dp"
+        android:text="select image from:"
+        android:gravity="center_horizontal"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/imagePlaceholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center_horizontal"
+        android:text="Select an Image!"
+        android:textColor="#000"
+        android:textSize="50sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/cdInfo"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="540dp"
+        android:textSize="22sp"
+        android:text=""
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textViewM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="615dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="40dp"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/babyBlue"
+        android:textSize="24sp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="1"
+        />
+
+    <!--        add onclick-->
+    <Button
+        android:id="@+id/ConfirmZoomBtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="setZoomedBitmap"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:backgroundTint="@null" />
+
+    <!--        add onclick-->
+    <Button
+        android:id="@+id/NewCameraBtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="665dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="cameraBtn"
+        android:text="Camera"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/NewCameraRollBtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="665dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="selectImageBtn"
+        android:text="Storage"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/AdjustBtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="670dp"
+        app:backgroundTint="@null"
+        android:text="Adjust"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:onClick="adjustBtn"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/SaveToCloudBtn"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="685dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="saveBtnMethod"
+        android:text="Save to Cloud"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/CheckmarkBtn"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="685dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/checkmarkbtn"
+        android:onClick="saveBtnMethod"
+        android:text="✓"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/SaveToDeviceBtn"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="685dp"
+        android:background="@drawable/rounded_corner"
+        android:onClick="cameraBtn"
+        android:text="Save to Device"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        app:backgroundTint="@null" />
+
+    <EditText
+        android:id="@+id/editTextFileName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginRight="180dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Find File (if applicable)"
+        android:textSize = "20sp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/editTextPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginRight="180dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Patient Name (if new)"
+        android:textSize = "20sp"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:visibility="invisible" />
+
+
+
+    <EditText
+        android:id="@+id/editTextPictureName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Picture Name"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/eyeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="625dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/black"
+        android:minHeight="50dp"
+        android:radius="20dp"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:entries="@array/eye_array"/>
+
+    <TextView
+        android:id="@+id/eyeSpinnerPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="637dp"
+        android:layout_marginRight="165dp"
+        android:text="Eye:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <Spinner
+        android:id="@+id/patientSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginRight="40dp"
+        android:backgroundTint="@color/black"
+        android:minHeight="50dp"
+        android:radius="20dp"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filenameSearchFloatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="520dp"
+        android:backgroundTint="@color/babyBlue"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        app:tint="@android:color/black" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottomnavcustom"
+        android:layout_marginBottom="0dp"
+        android:layout_marginHorizontal="0dp"
+
+        app:labelVisibilityMode="selected"
+        app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+        app:itemTextColor="@drawable/bottom_nav_icon_color_selector"
+        app:itemActiveIndicatorStyle="@color/teal_200"
+
+        />
+
+</merge>

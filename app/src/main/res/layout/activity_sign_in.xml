@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:background="@drawable/title_screen_shape_round"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="400dp"
+        >
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:background="@drawable/title_screen_shape"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="300dp"
+        >
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#000"
+        android:textSize="60dp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/username"
+        android:layout_below="@id/username"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="450dp"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        android:padding="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/password"
+        android:layout_below="@id/password"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="525dp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="650dp"
+        app:backgroundTint="@null"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:onClick="LoginActivated"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:backgroundTint="@color/babyBlue"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"
+        android:onClick="ReturnToLogin"
+        />
+</merge>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:text="Upload Image"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/imgViewTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="75dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="475dp"
+        android:radius="20dp"
+        android:minHeight="50dp"
+        android:backgroundTint="@color/black"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Patient Name"
+        android:layout_marginRight="165dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="475dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Picture Name"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="525dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="File Name"
+        android:layout_marginRight="165dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="425dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="77.5dp"
+        android:layout_marginTop="700dp"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:onClick="backBtn"
+        android:backgroundTint="@color/strikerBlue"
+        app:tint="@android:color/white"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingFirebase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="700dp"
+        android:backgroundTint="@color/strikerBlue"
+        app:tint="@android:color/white"
+        android:clickable="true"
+        android:onClick="accessBtn"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="@color/strikerBlue"
+        app:tint="@android:color/white"
+        android:clickable="true"
+        android:onClick="retrieveBtn"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="77.5dp"
+        android:layout_marginTop="700dp"
+        app:tint="@android:color/white"
+        android:backgroundTint="@color/strikerBlue"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_upload"
+        />
+</merge>

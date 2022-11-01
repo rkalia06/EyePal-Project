@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RunActivity">
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/imgViewTouch"
+        android:layout_width="match_parent"
+        android:layout_height="405dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="75dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="490dp"
+        android:textSize="20sp"
+        android:text="Swipe to Zoom In"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <!--        add onclick-->
+    <Button
+        android:id="@+id/NewConfirmZoomBtn"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="right"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="485dp"
+        app:backgroundTint="@null"
+        android:text="Confirm"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+    <!--        add onclick-->
+    <Button
+        android:id="@+id/NewCameraBtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="left"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="630dp"
+        app:backgroundTint="@null"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+    <!--        add onclick-->
+    <Button
+        android:id="@+id/NewCameraRollBtn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="right"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="630dp"
+        app:backgroundTint="@null"
+        android:text="Storage"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="20dp"
+        app:itemIconTint="@color/option_three_l_one"
+
+        />
+
+</merge>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.19230769230769232" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/bottomnavcustom.xml" value="0.22094017094017093" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/cardimageshape.xml" value="0.1623931623931624" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/checkmarkbtn.xml" value="0.2601851851851852" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/ic_baseline_cloud_24.xml" value="0.19230769230769232" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/rounded_button.xml" value="0.2919831223628692" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/rounded_corner.xml" value="0.2919831223628692" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/title_screen_shape.xml" value="0.15683760683760684" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/drawable/title_screen_shape_round.xml" value="0.15683760683760684" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_gallery.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_login.xml" value="0.14358974358974358" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_main.xml" value="0.2824786324786325" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_main2.xml" value="0.23461538461538461" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_main3.xml" value="0.23461538461538461" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_maps.xml" value="0.2545289855072464" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_new_run.xml" value="0.18316831683168316" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/activity_sign_in.xml" value="0.14358974358974358" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/layout/run_screen_first.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17564102564102563" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1 - Copy/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.17564102564102563" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15104166666666666" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1/app/src/main/res/layout/activity_main2.xml" value="0.209375" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1/app/src/main/res/layout/activity_main3.xml" value="0.26554054054054055" />
+        <entry key="..\:/Users/khelt/StudioProjects/A1/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22205128205128205" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

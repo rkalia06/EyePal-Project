@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">A1</string>
+    <string name="secondary_app_name">EyePal</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="eye_array">
+        <item>Left Eye</item>
+        <item>Right Eye</item>
+    </string-array>
+
+</resources>
+

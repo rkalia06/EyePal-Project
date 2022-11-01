@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        android:background="@drawable/title_screen_shape"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="800dp"
+        android:layout_height="200dp"
+        android:background="@drawable/title_screen_shape"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_gravity="top"
+        android:layout_marginBottom="300dp"
+        >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eye Pal."
+        android:textColor="#000"
+        android:textSize="75dp"
+        android:layout_marginTop="250dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/SignInBtn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="450dp"
+        app:backgroundTint="@null"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:onClick="SignInActivated"
+        />
+
+    <Button
+        android:id="@+id/CreateAcctBtn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="575dp"
+        app:backgroundTint="@null"
+        android:text="Create Account"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        />
+</merge>

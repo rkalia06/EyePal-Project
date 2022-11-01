@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174510816015",
+    "project_id": "aoneidentification",
+    "storage_bucket": "aoneidentification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174510816015:android:c3c2a40184a6ece23edc7a",
+        "android_client_info": {
+          "package_name": "com.example.a1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174510816015-pl9ntc1gu648s0dspf5lls4nuse3s7v6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhBND1rNF_4BfrO8G5GXSXYFUYRA1b6Ro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174510816015-pl9ntc1gu648s0dspf5lls4nuse3s7v6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
